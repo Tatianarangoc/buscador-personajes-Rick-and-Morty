@@ -1,11 +1,15 @@
 .landing {
   background-image: url(../../images/backgroundlanding.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   height: 100vh;
   width: 100%;
 }
-
+@media (min-width: 375px) {
+  .landing {
+    background-size: cover;
+  }
+}
 :root {
   --shadow-color: #9effa9;
   --shadow-color-light: rgb(57, 202, 185);
@@ -57,20 +61,22 @@
   }
 }
 .landingbtn {
-  margin-top: 100px;
-
-  margin-left: 20px;
+  width: 20vw;
+  margin-left: 200px;
   background-color: black;
   border: 1px solid#9effa9;
   padding: 10px;
   border-radius: 21px;
   color: greenyellow;
   text-transform: capitalize;
-  font-size: 16px;
+  text-decoration: none;
   text-align: center;
   cursor: pointer;
+  position: absolute;
+  bottom: 4em;
+  right: 4em;
 }
 .logoLanding {
   width: 70%;
-  height: 20vh;
+  height: 30vh;
 }
