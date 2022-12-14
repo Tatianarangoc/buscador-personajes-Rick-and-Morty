@@ -15,7 +15,7 @@ const FilterBySpecie = (props) => {
           onChange={handleChange}
         >
           <option className="formSpecie_option" value="all">
-            Todos{' '}
+            All{' '}
           </option>
           <option className="formSpecie_option" value="Human">
             Human{' '}
