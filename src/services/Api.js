@@ -4,10 +4,13 @@ const getDataApi = () => {
     .then((data) => {
       const cleanData = data.results.map((character) => {
         return {
+          id: character.id,
           image: character.image,
           name: character.name,
           species: character.species,
-          id: character.id,
+          status: character.status,
+          origin: character.origin.name,
+          episodes: character.episode.length.toString(),
         };
       });
       return cleanData;

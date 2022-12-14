@@ -4,7 +4,9 @@ import { useEffect, useState } from 'react';
 import iconLogo from '../styles/logo.png';
 import CharacterList from './CharacterList.js';
 import Filters from './Filters';
-
+import { Routes, Route, matchPath, useLocation } from 'react-router-dom';
+import CharacterDetails from './CharacterDetails';
+import Landing from './Landing';
 function App() {
   // VARIABLES ESTADO
 
@@ -40,16 +42,41 @@ function App() {
       : character.species === FilterBySpecie;
   });
   // HTML EN EL RETURN
+  const { pathname } = useLocation();
+  const dataUrl = matchPath('/character/:characterId', pathname);
+  console.log(dataUrl);
+  const characterId = dataUrl !== null ? dataUrl.params.characterId : null;
 
+  const characterFound = data.find(
+    (character) => character.id === parseInt(characterId)
+  );
   return (
     <>
-      <img src={iconLogo} className="logo" alt="Logo" />
+      <div>
+        <div class="stars row"></div>
+      </div>
 
-      <Filters
-        handleFilterByName={handleFilterByName}
-        handleFilterBySpecie={handleFilterBySpecie}
-      />
-      <CharacterList characters={characterFilter} />
+      <img src={iconLogo} className="logo" alt="Logo" />
+      <Routes>
+        {' '}
+        <Route path="/" element={<Landing />} />
+        <Route
+          path="/CharacterCard"
+          element={
+            <>
+              <Filters
+                handleFilterByName={handleFilterByName}
+                handleFilterBySpecie={handleFilterBySpecie}
+              />
+              <CharacterList characters={characterFilter} />
+            </>
+          }
+        />
+        <Route
+          path="/character/:characterId"
+          element={<CharacterDetails character={characterFound} />}
+        />
+      </Routes>
     </>
   );
 }

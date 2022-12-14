@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 const CharacterCard = (props) => {
   return (
     <li className="card">
-      <a href={props.character.id}>
+      <Link to={`/character/${props.character.id}`}>
         <img
           className="card__img"
           src={props.character.image}
@@ -10,7 +10,7 @@ const CharacterCard = (props) => {
         />
         <p className="card__title">{props.character.name}</p>
         <p className="card__description">{props.character.species}</p>
-      </a>
+      </Link>
     </li>
   );
 };
