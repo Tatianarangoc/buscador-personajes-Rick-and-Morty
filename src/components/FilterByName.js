@@ -7,6 +7,7 @@ const FilterByName = (props) => {
   };
   return (
     <form className="form" onSubmit={handleSubmit}>
+      <label className="name">Name</label>
       <input
         className="form_filterByName"
         type="text"

@@ -21,7 +21,7 @@ const CharacterDetails = (props) => {
         </div>
       </article>
       <Link className="linkbtn" to="/CharacterCard">
-        Ir a Inicio
+        Volver
       </Link>
     </>
   );
