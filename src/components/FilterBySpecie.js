@@ -4,19 +4,27 @@ const FilterBySpecie = (props) => {
   };
   return (
     <>
-      <label className="form__label " htmlFor="species">
-        Species:
-      </label>
-      <select
-        className="form__input-text"
-        name="gender"
-        id="gender"
-        onChange={handleChange}
-      >
-        <option value="all">Todos </option>
-        <option value="Human">Human </option>
-        <option value="Alien">Alien </option>
-      </select>
+      <form className="formSpecie">
+        <label className="formSpecie_label " htmlFor="species">
+          Species:
+        </label>
+        <select
+          className="formSpecie_input-text"
+          name="gender"
+          id="gender"
+          onChange={handleChange}
+        >
+          <option className="formSpecie_option" value="all">
+            Todos{' '}
+          </option>
+          <option className="formSpecie_option" value="Human">
+            Human{' '}
+          </option>
+          <option className="formSpecie_option" value="Alien">
+            Alien{' '}
+          </option>
+        </select>
+      </form>
     </>
   );
 };

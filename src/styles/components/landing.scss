@@ -1,0 +1,83 @@
+.landing {
+  background-image: url(../../images/backgroundlanding.png);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+}
+:root {
+  --shadow-color: #9effa9;
+  --shadow-color-light: rgb(57, 202, 185);
+}
+
+.landing_title {
+  margin-top: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Archivo Black', 'Archivo', sans-serif;
+  font-weight: normal;
+  display: block;
+  height: auto;
+  text-align: center;
+  color: white;
+  animation: neon 3s infinite;
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color-light),
+      0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color),
+      0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color),
+      0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+  50% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 5px var(--shadow-color-light),
+      0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+      0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color),
+      0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color),
+      0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+  }
+  100% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light),
+      -1px 1px 1px var(--shadow-color-light),
+      1px -1px 1px var(--shadow-color-light),
+      1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color-light),
+      0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color),
+      0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color),
+      0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+}
+.landingbtn {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 550px;
+  background-color: black;
+  border: 1px solid#9effa9;
+  padding: 10px;
+  width: 129px;
+  height: 22px;
+  border-radius: 21px;
+  color: greenyellow;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 42px;
+  cursor: pointer;
+
+  @media all and (min-width: 768px) {
+    margin-top: 60px;
+  }
+}
+.logoLanding {
+  width: 100%;
+  height: 40vh;
+}

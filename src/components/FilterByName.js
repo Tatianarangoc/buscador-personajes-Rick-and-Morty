@@ -6,8 +6,13 @@ const FilterByName = (props) => {
     props.handleFilterByName(ev.target.value);
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" value={props.filterByName} onChange={handleChange} />
+    <form className="form" onSubmit={handleSubmit}>
+      <input
+        className="form_filterByName"
+        type="text"
+        value={props.filterByName}
+        onChange={handleChange}
+      />
     </form>
   );
 };

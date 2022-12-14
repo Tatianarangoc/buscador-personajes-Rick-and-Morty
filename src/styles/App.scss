@@ -1,10 +1,18 @@
 @import 'components/reset';
-
+@import 'components/landing';
+@import 'components/filters';
+@import 'components/cards';
+@import 'components/carddetail';
 /*
   Aquí puedes poner tu código Sass
 */
 
 .logo {
   width: 100%;
-  height: 50vh;
+  height: 30vh;
+  background-attachment: fixed;
+}
+body {
+  font-family: 'Archivo', sans-serif;
+  background-color: black;
 }

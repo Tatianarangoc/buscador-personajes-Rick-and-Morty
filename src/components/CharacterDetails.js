@@ -1,21 +1,29 @@
 import { Link } from 'react-router-dom';
+import iconLogo from '../images/logo2.png';
 
 const CharacterDetails = (props) => {
   return (
-    <article className="card">
-      <img
-        className="card__img"
-        src={props.character.image}
-        alt={`Foto de ${props.character.name}`}
-        title={`Foto de ${props.character.name}`}
-      />
-      <p className="card__title">{props.character.name}</p>
-      <p className="card__description">{props.character.species}</p>
-      <p className="card__description">{props.character.status}</p>
-      <p className="card__description">{props.character.origin}</p>
-      <p className="card__description">{props.character.episode}</p>
-      <Link to="/">Ir a Inicio</Link>
-    </article>
+    <>
+      <img src={iconLogo} className="logoCardDetail" alt="Logo" />
+      <article className="carddetail">
+        <img
+          className="card__img"
+          src={props.character.image}
+          alt={`Foto de ${props.character.name}`}
+          title={`Foto de ${props.character.name}`}
+        />{' '}
+        <div>
+          <p className="card__name">{props.character.name}</p>
+          <p className="card__description">{props.character.species}</p>
+          <p className="card__description">{props.character.status}</p>
+          <p className="card__description">{props.character.origin}</p>
+          <p className="card__description">{props.character.episode}</p>
+        </div>
+      </article>
+      <Link className="linkbtn" to="/CharacterCard">
+        Ir a Inicio
+      </Link>
+    </>
   );
 };
 export default CharacterDetails;

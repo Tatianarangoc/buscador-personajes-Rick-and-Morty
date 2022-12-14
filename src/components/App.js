@@ -1,7 +1,6 @@
 import '../styles/App.scss';
 import getDataApi from '../services/Api';
 import { useEffect, useState } from 'react';
-import iconLogo from '../styles/logo.png';
 import CharacterList from './CharacterList.js';
 import Filters from './Filters';
 import { Routes, Route, matchPath, useLocation } from 'react-router-dom';
@@ -52,11 +51,7 @@ function App() {
   );
   return (
     <>
-      <div>
-        <div class="stars row"></div>
-      </div>
-
-      <img src={iconLogo} className="logo" alt="Logo" />
+      {' '}
       <Routes>
         {' '}
         <Route path="/" element={<Landing />} />

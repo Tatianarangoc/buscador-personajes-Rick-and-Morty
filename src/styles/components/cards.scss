@@ -1,0 +1,31 @@
+.card {
+  width: 155px;
+  border: 2px solid rgb(0, 206, 185);
+  padding: 1px;
+  box-shadow: 0px 2px 12px #555;
+}
+.card_container {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.card__img {
+  width: 150px;
+  height: 120px;
+}
+.card__name {
+  color: rgb(47, 255, 234);
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.card__specie {
+  color: rgb(47, 255, 234);
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.link {
+  text-decoration: none;
+}

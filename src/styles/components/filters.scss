@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+}
+
+.form_filterByName {
+  border: 1px solid greenyellow;
+  background-color: black;
+}
+.formSpecie_label {
+  color: rgb(0, 153, 138);
+  font-weight: 700;
+}
+.formSpecie_input-text {
+  border: 1px solid greenyellow;
+  background-color: rgb(0, 135, 126);
+}
+.formSpecie {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.formSpecie_option {
+  color: greenyellow;
+}
