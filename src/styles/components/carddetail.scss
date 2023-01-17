@@ -1,20 +1,22 @@
 .carddetail {
-  margin-top: 20px;
-  margin-left: 150px;
-  width: 155px;
+  margin-top: 10px;
+  margin-left: 120px;
+  width: 260px;
   border: 2px solid rgb(0, 206, 185);
   padding: 2px;
   box-shadow: 0px 2px 22px #555;
   background-color: #00bfff;
+  border-radius: 2.5px;
 }
 .logoCardDetail {
   height: 20vh;
   width: 50%;
   align-items: center;
 }
-.card__img {
-  width: 150px;
-  height: 100px;
+.card__img2 {
+  width: 225px;
+  height: 150px;
+  margin-left: 12px;
 }
 .card__name {
   color: white;

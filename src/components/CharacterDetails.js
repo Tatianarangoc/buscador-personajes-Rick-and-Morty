@@ -7,7 +7,7 @@ const CharacterDetails = (props) => {
       <img src={iconLogo} className="logoCardDetail" alt="Logo" />
       <article className="carddetail">
         <img
-          className="card__img"
+          className="card__img2"
           src={props.character.image}
           alt={`Foto de ${props.character.name}`}
           title={`Foto de ${props.character.name}`}
